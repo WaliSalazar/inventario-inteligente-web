@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Sistema de Inventario Inteligente: control de stock, alertas de stock bajo, reportes y códigos QR. Proyecto formativo SENA." />
+        <meta name="author" content="Wali Salazar" />
+        <title>Sistema de Inventario Inteligente</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Estilos base de la plantilla (incluye Bootstrap 5) -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Personalización con los colores y la tipografía de la app -->
+        <link href="css/inventario.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navegación -->
+        <nav class="navbar navbar-dark nav-inventario static-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                    <span class="logo-box" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    </span>
+                    Inventario Inteligente
+                </a>
+                <div class="d-none d-md-flex gap-1">
+                    <a class="nav-link-inv" href="#funciones">Funciones</a>
+                    <a class="nav-link-inv" href="#modulos">Módulos</a>
+                    <a class="nav-link-inv" href="#tecnologias">Tecnologías</a>
+                </div>
+                <a class="btn btn-outline-light btn-sm px-3" href="#contacto">Contacto</a>
+            </div>
+        </nav>
+
+        <!-- Encabezado principal -->
+        <header class="masthead masthead-inv" id="inicio">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-5">
+                        <span class="badge-inv">Proyecto formativo SENA · ADSO</span>
+                        <h1 class="mt-3 mb-3">Controla tu inventario en tiempo real</h1>
+                        <p class="lead mb-4">Registra productos, recibe alertas de stock bajo, consulta reportes y ubica la mercancía con códigos QR, desde cualquier navegador.</p>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <a class="btn btn-primary btn-lg" href="#funciones">Ver funciones</a>
+                            <a class="btn btn-outline-primary btn-lg" href="#modulos">Ver módulos</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-frame">
+                            <img src="assets/img/app-panel.jpg" alt="Panel principal del Sistema de Inventario Inteligente con métricas de stock y resumen de productos" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Funciones -->
+        <section class="features-icons text-center" id="funciones">
+            <div class="container">
+                <h2 class="section-heading mb-5">Todo lo que necesitas para tu bodega</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="features-icons-icon d-flex"><i class="bi-box-seam m-auto"></i></div>
+                            <h3>Inventario centralizado</h3>
+                            <p class="mb-0">Crea, edita y busca productos con su cantidad, ubicación y estado en una sola tabla.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="features-icons-icon d-flex"><i class="bi-bell m-auto"></i></div>
+                            <h3>Alertas automáticas</h3>
+                            <p class="mb-0">El sistema avisa cuando un producto llega al mínimo o se queda sin existencias.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="features-icons-icon d-flex"><i class="bi-upc-scan m-auto"></i></div>
+                            <h3>Códigos QR</h3>
+                            <p class="mb-0">Consulta un producto al escanear su código, directamente en el lugar donde está guardado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos (vitrina) -->
+        <section class="showcase" id="modulos">
+            <div class="container-fluid p-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 order-lg-2 showcase-img-wrap"><img class="showcase-shot" src="assets/img/app-inventario.jpg" alt="Módulo de inventario con la lista de productos y sus estados" /></div>
+                    <div class="col-lg-6 order-lg-1 showcase-text">
+                        <span class="status status-ok">Disponible</span>
+                        <h2>Módulo de inventario</h2>
+                        <p class="lead mb-0">Cada producto muestra su estado con colores claros: disponible, stock bajo o sin stock. La búsqueda filtra por nombre o ubicación al instante.</p>
+                    </div>
+                </div>
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 showcase-img-wrap"><img class="showcase-shot" src="assets/img/app-alertas.jpg" alt="Módulo de alertas con productos en stock bajo y sin stock" /></div>
+                    <div class="col-lg-6 showcase-text">
+                        <span class="status status-warn">Stock bajo</span>
+                        <h2>Alertas de stock</h2>
+                        <p class="lead mb-0">Las alertas se generan solas cuando un producto llega a tres unidades o menos, para reabastecer antes de quedarse sin mercancía.</p>
+                    </div>
+                </div>
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 order-lg-2 showcase-img-wrap"><img class="showcase-shot" src="assets/img/app-reportes.jpg" alt="Módulo de reportes con unidades totales y distribución por producto" /></div>
+                    <div class="col-lg-6 order-lg-1 showcase-text">
+                        <span class="status status-danger">Sin stock</span>
+                        <h2>Reportes</h2>
+                        <p class="lead mb-0">Unidades totales, productos en riesgo y la distribución del stock por producto, calculados a partir del inventario actual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologías -->
+        <section class="tecnologias text-center" id="tecnologias">
+            <div class="container">
+                <h2 class="section-heading mb-5">Construido con</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-lg-3"><div class="tech-card"><i class="bi-filetype-html"></i><h3>HTML, CSS y JS</h3><p>Interfaz web adaptable</p></div></div>
+                    <div class="col-6 col-lg-3"><div class="tech-card"><i class="bi-hdd-network"></i><h3>Node.js + Express</h3><p>API REST</p></div></div>
+                    <div class="col-6 col-lg-3"><div class="tech-card"><i class="bi-shield-lock"></i><h3>JWT</h3><p>Autenticación segura</p></div></div>
+                    <div class="col-6 col-lg-3"><div class="tech-card"><i class="bi-database"></i><h3>MySQL</h3><p>Base de datos</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section class="call-to-action-inv text-center" id="contacto">
+            <div class="container">
+                <h2 class="mb-3">¿Quieres conocer el proyecto?</h2>
+                <p class="lead mb-4">El código fuente y la documentación están disponibles en GitHub.</p>
+                <a class="btn btn-light btn-lg px-4" href="https://github.com/WaliSalazar" target="_blank" rel="noopener"><i class="bi-github me-2"></i>Ver en GitHub</a>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="footer-inv">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center text-lg-start my-auto">
+                        <p class="mb-1">&copy; 2026 Wali Salazar · Sistema de Inventario Inteligente</p>
+                        <p class="small mb-0">Tecnólogo en Análisis y Desarrollo de Software · SENA</p>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end my-auto">
+                        <p class="small mb-0">Plantilla basada en <a href="https://startbootstrap.com/theme/landing-page" target="_blank" rel="noopener">Landing Page de Start Bootstrap</a> (licencia MIT)</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

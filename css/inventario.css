@@ -1,0 +1,145 @@
+/* ==========================================================================
+   inventario.css
+   Personaliza la plantilla Landing Page (Start Bootstrap, MIT) con la
+   paleta, tipografía y componentes del Sistema de Inventario Inteligente
+   (mismos valores que css/global.css de la app).
+   ========================================================================== */
+:root {
+  --color-primary: #1a3a5c;
+  --color-primary-dark: #122b45;
+  --color-primary-light: #e8f2fb;
+  --color-success-bg: #eaf3de;
+  --color-success-text: #3b6d11;
+  --color-warning-bg: #faeeda;
+  --color-warning-text: #854f0b;
+  --color-danger-bg: #fcebeb;
+  --color-danger-text: #a32d2d;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-border: #dbe4ec;
+  --bg-app: linear-gradient(135deg, #dceef8 0%, #e8f4fb 100%);
+  --shadow-card: 0 2px 10px rgba(26, 58, 92, 0.08);
+  --font-sans: 'Segoe UI', Roboto, Arial, sans-serif;
+  --bs-primary: #1a3a5c;
+  --bs-primary-rgb: 26, 58, 92;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+}
+h1, h2, h3 { font-weight: 600; }
+.lead { color: var(--color-text-secondary); font-weight: 400; }
+
+/* Botones con el azul institucional */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn { border-radius: 6px; font-weight: 600; }
+
+/* Barra de navegación igual a la de la app */
+.nav-inventario { background: var(--color-primary); min-height: 56px; }
+.nav-inventario .navbar-brand { color: #fff; font-weight: 600; font-size: 1.05rem; }
+.logo-box {
+  width: 30px; height: 30px; border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.logo-box svg { width: 18px; height: 18px; fill: #fff; }
+.nav-link-inv {
+  color: rgba(255, 255, 255, 0.82); text-decoration: none;
+  font-size: 0.92rem; padding: 6px 12px; border-radius: 6px;
+}
+.nav-link-inv:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+
+/* Encabezado: fondo celeste de la app en lugar de la foto */
+.masthead.masthead-inv {
+  background: var(--bg-app);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.masthead.masthead-inv::before { display: none; }
+.masthead-inv h1 { font-size: 2.6rem; color: var(--color-primary); }
+.badge-inv {
+  display: inline-block; font-size: 0.78rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--color-primary); background: #fff;
+  border: 1px solid var(--color-border); border-radius: 999px; padding: 4px 12px;
+}
+.screen-frame {
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: 14px; box-shadow: 0 12px 32px rgba(26, 58, 92, 0.16);
+  overflow: hidden;
+}
+.screen-frame img { display: block; width: 100%; }
+
+/* Funciones como tarjetas de la app */
+.features-icons { background: #f3f6f9; padding-top: 5rem; padding-bottom: 5rem; }
+.section-heading { color: var(--color-primary); }
+.feature-card {
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: 14px; box-shadow: var(--shadow-card); padding: 2rem 1.5rem;
+}
+.feature-card h3 { font-size: 1.25rem; margin-top: 1rem; }
+.feature-card p { color: var(--color-text-secondary); }
+.features-icons .features-icons-icon { height: 4.5rem; }
+.features-icons .features-icons-icon i {
+  font-size: 2.4rem; color: var(--color-primary);
+  background: var(--color-primary-light); border-radius: 14px;
+  width: 4.5rem; height: 4.5rem; display: flex; align-items: center; justify-content: center;
+}
+
+/* Vitrina de módulos con capturas reales */
+.showcase .showcase-text { padding: 4rem 3rem; }
+.showcase .showcase-text h2 { margin: 0.75rem 0 1rem; }
+.showcase-img-wrap { background: var(--bg-app); padding: 2.5rem; }
+.showcase-shot {
+  display: block; width: 100%; border-radius: 12px;
+  border: 1px solid var(--color-border); box-shadow: var(--shadow-card);
+}
+.status {
+  display: inline-block; font-size: 0.8rem; font-weight: 600;
+  border-radius: 999px; padding: 3px 12px;
+}
+.status-ok { background: var(--color-success-bg); color: var(--color-success-text); }
+.status-warn { background: var(--color-warning-bg); color: var(--color-warning-text); }
+.status-danger { background: var(--color-danger-bg); color: var(--color-danger-text); }
+
+/* Tecnologías */
+.tecnologias { background: #f3f6f9; padding: 5rem 0; }
+.tech-card {
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: 14px; box-shadow: var(--shadow-card); padding: 1.75rem 1rem; height: 100%;
+}
+.tech-card i { font-size: 2rem; color: var(--color-primary); }
+.tech-card h3 { font-size: 1.05rem; margin: 0.75rem 0 0.25rem; }
+.tech-card p { color: var(--color-text-secondary); font-size: 0.9rem; margin: 0; }
+
+/* Llamado a la acción y pie */
+.call-to-action-inv { background: var(--color-primary); padding: 5rem 0; }
+.call-to-action-inv h2 { color: #fff; }
+.call-to-action-inv .lead { color: rgba(255, 255, 255, 0.82); }
+.call-to-action-inv .btn-light { color: var(--color-primary); }
+.footer-inv { background: var(--color-primary-dark); color: rgba(255, 255, 255, 0.8); padding: 2rem 0; }
+.footer-inv a { color: #fff; }
+
+@media (max-width: 991.98px) {
+  .masthead-inv h1 { font-size: 2rem; }
+  .showcase .showcase-text { padding: 2.5rem 1.5rem; }
+  .showcase-img-wrap { padding: 1.5rem; }
+}
